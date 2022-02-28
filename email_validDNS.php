@@ -10,7 +10,6 @@ if($argv[1] and $argv[2]){
 		preg_match('/@(.*)/',$mail, $domain);
 		$valid_email = checkdnsrr($domain[1], "MX");
 		if ($valid_email == 'true'){
-			echo $art."\r\n";
 
             $put = "\r\n".$mail.' : Valid';
 
